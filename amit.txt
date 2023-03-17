@@ -1,0 +1,79 @@
+package com.client;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.serviceimplementation.BatchIdInvalidEcxeption;
+import com.serviceimplementation.Karvenagar;
+import com.service.Cjc;
+public class Test {
+	public static void main(String[] args) {
+	
+		Cjc c=new Karvenagar();
+//		c.addcourse();
+//		c.addfaculty();
+//		c.addbatch();
+//		c.addstudent();
+			
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("***Welcome to CJC***");
+		System.out.println("1.Addcourse");
+		System.out.println("2.Viewcourse");
+		System.out.println("3.Addfaculty");
+		System.out.println("4.Viewfaculty");
+		System.out.println("5.Addbatch");
+		System.out.println("6.Viewbatch");
+		System.out.println("7.Addstudent");
+		System.out.println("8.Viewstudent");
+		while(true) {
+		System.out.println("\n Enter Your Choice:");
+		int ch=sc.nextInt();
+		
+		switch(ch) {
+		case 1:
+			c.addcourse();
+			break;
+		case 2:
+			c.viewcourse();
+			break;
+		case 3:
+			c.addfaculty();
+			break;
+		case 4:
+			c.viewfaculty();
+			break;
+			
+		case 5:
+			c.addbatch();
+			break;
+			
+		case 6:
+			try {
+				c.viewbatch();
+			}
+			catch(BatchIdInvalidEcxeption e) {
+				System.out.println(e.getMessage());
+			}
+
+			
+			break;
+			
+		case 7:
+			c.addstudent();
+			break;
+			
+		case 8:
+			c.viewstudent();
+			break;
+			
+		case 9:		
+		System.exit(0);
+		}
+		
+		
+	}
+	}
+}
+I LOVE YOU amit
+alalalalalal
