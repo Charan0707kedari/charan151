@@ -75,5 +75,3 @@ public class Test {
 	}
 	}
 }
-I LOVE YOU amit
-alalalalalal
